@@ -123,8 +123,8 @@ public:
             AddGossipItemFor(player, GOSSIP_ICON_CHAT, messageKnown.str(), GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 2);
         else
         {
-            AddGossipItemFor(player, GOSSIP_ICON_TRAINER, "Teach me to ride.. EVERYTHING!", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 1);
-            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "Maybe Next Time", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 2);
+            AddGossipItemFor(player, GOSSIP_ICON_TRAINER, "马上教我骑乘……所有东西！", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 1);
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "下次吧", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 2);
         }
 
         SendGossipMenuFor(player, 601014, creature->GetGUID());
@@ -458,28 +458,28 @@ public:
                     {
                         case 1:
                         {
-                            me->Say("I can teach you to ride.. anything!", LANG_UNIVERSAL);
+                            me->Say("我可以教你骑乘……任何东西！", LANG_UNIVERSAL);
                             me->HandleEmoteCommand(EMOTE_ONESHOT_WAVE);
                             MessageTimer = urand(60000, 180000);
                             break;
                         }
                         case 2:
                         {
-                            me->Say("Have you ever wanted to mount a chicken?", LANG_UNIVERSAL);
+                            me->Say("你曾想过骑上一只鸡吗？", LANG_UNIVERSAL);
                             me->HandleEmoteCommand(EMOTE_ONESHOT_WAVE);
                             MessageTimer = urand(60000, 180000);
                             break;
                         }
                         case 3:
                         {
-                            me->Say("The finest mounts in all of Azeroth are in my stables.", LANG_UNIVERSAL);
+                            me->Say("全艾泽拉斯最优秀的坐骑，都在我的马厩里。", LANG_UNIVERSAL);
                             me->HandleEmoteCommand(EMOTE_ONESHOT_WAVE);
                             MessageTimer = urand(60000, 180000);
                             break;
                         }
                         default:
                         {
-                            me->Say("The finest mounts in all of Azeroth are in my stables.", LANG_UNIVERSAL);
+                            me->Say("全艾泽拉斯最优秀的坐骑，都在我的马厩里。", LANG_UNIVERSAL);
                             me->HandleEmoteCommand(EMOTE_ONESHOT_WAVE);
                             MessageTimer = urand(60000, 180000);
                             break;
