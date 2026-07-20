@@ -32,3 +32,5 @@ INSERT INTO `creature_template_model` (`CreatureID`, `Idx`, `CreatureDisplayID`,
 
 DELETE FROM `npc_text` WHERE `ID`=@Entry;
 INSERT INTO `npc_text` (`ID`, `text0_0`) VALUES (@Entry, 'Hail $N. I can teach you to ride.. anything!');
+
+INSERT INTO `creature_template_locale` (`entry`,`locale`,`Name`,`Title`,`VerifiedBuild`) values (601014, 'zhCN', '迦布里风', '坐骑服务', 0);
